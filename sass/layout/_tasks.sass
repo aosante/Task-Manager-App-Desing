@@ -1,0 +1,45 @@
+main
+    width: 100%
+    height: 100vh
+
+    .container
+        background: #ededed
+        width: 100%
+        max-width: 1200px
+        height: 100%
+        margin: 0 auto
+        display: block
+        padding: 0 .8em
+        
+        .tasks-box
+            margin: 1em 0
+            padding: .6em
+            background-color: #fff
+            text-align: left
+            border-bottom: 1px solid #3d383c
+            box-shadow: 0 0 4px 0 #3d383c
+            position: relative
+            display: flex
+            &:first-child
+                margin-top: 3em
+            div
+                flex: 1
+            .checkbox
+                align-self: center
+                text-align: right
+                i
+                    padding: .5em
+                    margin-right: .5em
+                    font-size: 1.5em
+                    color: $dark-blue
+                    cursor: pointer
+                    &:hover
+                        transform: scale(1.3)
+            h2,p
+                margin: 0
+                padding: 0  
+                padding-left: .3em
+            p
+                color: grey
+            
+            

@@ -1,0 +1,56 @@
+.top
+    background-image: url(../img/mountains.jpg)
+    background-position: center
+    .header
+        background: rgba(58,71,147,.4)
+        padding: 2em 1.5em
+        color: #fff
+        text-align: left
+        display: flex
+        align-items: center
+        .logo
+            flex: 1
+            @media(max-width: 480px)
+                font-size: 1.4em
+        .tasks-total
+            flex: 2
+            width: 100%
+            text-align: right
+            @media(max-width: 700px)
+                flex: 1
+            .task
+                display: inline-block
+                margin-right: .5em
+                @media(max-width: 700px)
+                    font-size: 1em
+                .number
+                    color: $light-purple
+                    margin-right: .3em
+                    @media(max-width: 700px)
+                        font-size: 1.8em
+                    
+
+    .add-circle
+        position: absolute
+        right: 3em
+        top: 7.5em
+        background-color: black
+        border-radius: 100%
+        border: 3px solid #000
+        opacity: .9
+        cursor: pointer
+        &:hover
+            transform: scale(1.1)
+        @media(max-width: 700px)
+            top: 6.8em
+        @media(max-width: 480px)
+            top: 5.7em
+        @media(max-width: 453px)
+            top: 8.6em
+        .fa
+            color: $light-purple
+            font-size: 4em
+            @media(max-width: 700px)
+                font-size: 3.4em
+            
+       

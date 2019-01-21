@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/app.css" />
+    <title>CodingPhase App Course</title>
+  </head>
+  <body>
+    <div class="all-tasks">
+      <div class="top">
+        <header class="header">
+          <h1 class="logo">Task Manager</h1>
+          <div class="tasks-total">
+            <h2 class="task"><span class="number">12</span>Tasks</h2>
+            <h2 class="task"><span class="number">5</span>Completed</h2>
+          </div>
+        </header>
+        <div class="add-circle"><i class="fa fa-plus-circle"></i></div>
+      </div>
+      <main>
+        <section>
+          <div class="container">
+            <div class="tasks-box">
+              <div>
+                <h2>Clean Room</h2>
+                <p>Created: January 21, 2018</p>
+              </div>
+              <div class="checkbox"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="tasks-box">
+              <div>
+                <h2>Buy Food</h2>
+                <p>Created: February 14, 2018</p>
+              </div>
+              <div class="checkbox"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="tasks-box">
+              <div>
+                <h2>Walk Dog</h2>
+                <p>Created: December 12, 2019</p>
+              </div>
+              <div class="checkbox"><i class="fa fa-check"></i></div>
+            </div>
+          </div>
+        </section>
+        <section class="input-form">
+          <form>
+            <h1>Add Task</h1>
+            <div class="input-group">
+              <input type="text" name="title" placeholder="Name:" />
+            </div>
+            <div class="input-group">
+              <input type="text" name="category" placeholder="Category:" />
+            </div>
+            <div class="input-group">
+              <textarea
+                name="notes"
+                id=""
+                cols="30"
+                rows="9"
+                placeholder="Notes:"
+              ></textarea>
+              <button type="submit" class="btn-primary form-btn">
+                Add task
+              </button>
+            </div>
+          </form>
+          <i class="fa fa-times close-btn"></i>
+        </section>
+      </main>
+      <script src="./js/app.js"></script>
+    </div>
+  </body>
+</html>
